@@ -38,10 +38,11 @@
     "style-loader": "^1.2.1",
     "uuid": "^8.2.0",
     "validator": "^13.1.1",
-    "webpack": "^4.43.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack": "^4.43.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.12"
+    "chalk": "^4.1.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
