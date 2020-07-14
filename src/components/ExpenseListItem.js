@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import moment from "moment";
+import numeral from "numeral";
 const ExpectListItem = ({ id, description, amount, createdAt }) => (
   <div>
     <Link to={`/edit/${id}`}>
@@ -8,7 +10,8 @@ const ExpectListItem = ({ id, description, amount, createdAt }) => (
     </Link>
 
     <p>
-      {amount} - {createdAt}
+      {numeral(amount / 100).format("$0,0.00")}-
+      {moment(createdAt).format("MMMM Do, YYYY")}
     </p>
   </div>
 );
